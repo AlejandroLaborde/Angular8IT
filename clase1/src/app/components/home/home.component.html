@@ -1,1 +1,26 @@
-<p>home works!</p>
+
+
+
+
+
+<div class="container">
+
+
+<div class="alert alert-danger" role="alert" *ngIf="mostrar">
+    A simple primary alert—check it out!
+</div>
+    
+<ul>
+    <li *ngFor="let dia of dias" (click)="showDia(dia)">
+        {{dia}}
+    </li>
+</ul>
+
+
+<div class="alert alert-danger" role="alert" *ngIf="seleccionado">
+    <p>{{seleccionado}}</p>
+</div>
+
+
+
+</div>
