@@ -1,0 +1,29 @@
+
+<div class="row">
+  <div class="col col-md-7">
+    <form  [formGroup] = "objectFormulario" (ngSubmit) = formularioActual()>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Nombre</label>
+        <input  name="nombre" formControlName="nombre" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">director</label>
+        <input name="director" formControlName="director" type="text" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">genero</label>
+        <input type="text" formControlName="genero" name="genero" class="form-control" id="exampleInputPassword1">
+      </div>
+      <button type="submit" [disabled]='!objectFormulario.valid' class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+
+  <div class="col col-md-4">
+
+    <p>datos form: {{objectFormulario.value | json}}</p>
+    <p>Valido: {{objectFormulario.valid}}</p>
+    <p>Errores: {{objectFormulario.errors | json}}</p>
+
+  </div>
+</div>
