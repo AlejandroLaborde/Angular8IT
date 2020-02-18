@@ -1,0 +1,12 @@
+{
+    "userName": "adasd",
+    "lastName": "educacionit",
+    "firstName": "educacionit,",
+    "curso": {
+        "nombre": "angular",
+        "dia": "Sabado",
+        "turno": "mañana",
+        "horario": "10-14"
+    },
+    "token": "token"
+}
